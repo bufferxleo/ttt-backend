@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
+import {} from "dotenv/config";
 
 const connetDB = async () => {
   try {
-    const con = await mongoose.connect("mongodb://localhost:27017/tic-tac-toe");
+    const con = await mongoose.connect(`${process.env.DB_URL}`);
     if (con) {
       console.log("db connection sucess");
     }else{
