@@ -8,5 +8,11 @@
         "websocket": true
       }
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
   ]
 }
