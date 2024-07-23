@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["https://bufferxleo.github.io/ttt-frontend/"],
+    origin: ["https://bufferxleo.github.io/ttt-frontend/#/"],
     methods: ["GET", "POST"],
   },
 });
